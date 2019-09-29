@@ -1,3 +1,4 @@
+# Input variables
 startNumber = 13
 stopNumber = 4
 
