@@ -21,6 +21,6 @@ elif startNumber > stopNumber:
             oddCounter += 1
 else:
     print("The values are equal")
-
+# Print counts of even and odd
 print("Even counter: ", evenCounter)
 print("Odd counter: ", oddCounter)
