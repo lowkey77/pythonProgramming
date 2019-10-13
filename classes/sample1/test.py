@@ -5,4 +5,3 @@ bike1.setName("Super")
 
 # Printobj
 bike1.print()
-

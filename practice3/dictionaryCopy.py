@@ -19,3 +19,7 @@ print()
 print("Output of current dictionaries: ")
 print("Dictionary A: ", dictionaryA)
 print("Dictionary B: ", dictionaryB)
+
+print(dictionaryA.get("B"))
+print(dictionaryA.get("X"))
+print(dictionaryA.get("X", "Not found!"))
