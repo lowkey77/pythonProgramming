@@ -13,7 +13,7 @@ class Car:
     def get_descriptive_name(self):
         """Return a neatly formatted descriptive name."""
         long_name = f"{self.year} {self.make} {self.model}"
-        return long_name
+        return long_name.title()
 
     def read_odometer(self):
         """Print a statement showing the car's mileage."""
@@ -24,7 +24,7 @@ class Car:
         if mileage >= self.odometer_reading:
             self.odometer_reading = mileage
         else:
-            print("You can't roll back the odometer.")
+            print("You can't roll back the odometer!")
 
     def increment_odometer(self, miles):
         """Add the given amount to the odcometer."""
@@ -33,9 +33,3 @@ class Car:
         else:
             self.odometer_reading += miles
 
-
-my_new_car = Car("audi", "a4", 2019)
-print(my_new_car.get_descriptive_name())
-my_new_car.update_odometer(23_500)
-my_new_car.increment_odometer(100)
-my_new_car.read_odometer()
