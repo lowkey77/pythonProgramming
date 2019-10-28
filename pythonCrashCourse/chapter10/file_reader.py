@@ -1,4 +1,4 @@
-with open("../textFiles/pi_digits.txt") as file_object:
+with open("../textFiles/pi_digits.txt", "r") as file_object:
     lines = file_object.readlines()
 
     output = ""
