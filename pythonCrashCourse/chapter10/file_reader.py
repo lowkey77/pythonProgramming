@@ -1,10 +1,8 @@
-with open("../textFiles/pi_digits.txt") as file_object:
+with open("../textFiles/pi_digits.txt", "r") as file_object:
     lines = file_object.readlines()
 
-pi_string = ""
+    output = ""
+    for line in lines:
+        output += line.strip()
 
-for line in lines:
-    pi_string += line.strip()
-
-print(pi_string)
-print(pi_string.__len__())
+    print(output)
